@@ -1,0 +1,16 @@
+{% extends 'base/main.html' %}
+{% load static %}
+{% block content %}
+
+<div class="container">
+    <h3>Project Form</h3>
+    <form method="POST">
+        {% csrf_token %}
+
+        {{ for field in forms %%}
+
+        <input type="input" value="submit" >
+    </form>
+</div>
+
+{% endblock content %}

@@ -1,0 +1,11 @@
+{% extends "base/main.html" %}
+{% load static %}
+{% block content %}
+
+<div class="container">
+    <img src="{{ project.thumbnail.url }}">
+
+    <h1>{{ project.title }}</h1>
+</div>
+
+{% endblock content %}

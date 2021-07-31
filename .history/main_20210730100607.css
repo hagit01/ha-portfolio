@@ -1,0 +1,38 @@
+.navigation-bar{
+    background-color: #1F2428;
+    height: 50px;
+    display:flex;
+    justify-content: center;
+}
+
+.nav-link{
+    color: #fff;
+}
+
+.hero{
+    background-color: #1F2428;
+    height: 80vh;
+}
+
+#profile_pic{
+    height: 150;
+    width: 150px;
+    object-fit: cover;
+}
+
+.hero--content{
+    width: 1000;
+    margin: 0 auto;
+}
+
+.hero--content--intro{
+    display: flex;
+    color: #fff;
+    justify-content: center;
+    align-items: center;
+    gap: 2em;
+}
+
+.intro--name{
+    font: 120px;
+}

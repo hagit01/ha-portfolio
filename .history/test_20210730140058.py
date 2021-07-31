@@ -1,0 +1,1 @@
+r = request.get("https://api.ncovvn")

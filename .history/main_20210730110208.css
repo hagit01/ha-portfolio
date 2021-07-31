@@ -1,0 +1,88 @@
+body{
+    background-color: #E5E5E5;
+}
+
+.navigation-bar{
+    background-color: #1F2428;
+    height: 50px;
+    display:flex;
+    justify-content: center;
+}
+
+.nav-link{
+    color: #fff;
+}
+
+.hero{
+    background-color: #1F2428;
+    height: 80vh;
+    color:#fff;
+}
+
+#profile_pic{
+    height: 200px;
+    width: 180px;
+    object-fit: cover;
+}
+
+.hero--content{
+    width: 1000;
+    margin: 0 auto;
+    padding: 3em;
+}
+
+.hero--content--intro{
+    display: flex;
+    color: #fff;
+    justify-content: center;
+    align-items: center;
+    gap: 2em;
+    margin-bottom: 3em;
+}
+
+.hero--content--subsection{
+    text-align: center;
+}
+
+.intro--name{
+    font-size: 100px;
+    letter-spacing: .1em;
+    font-weight: 20;
+    text-align: center;
+}
+
+.description{
+    font-size: 40px;
+}
+
+.slogan{
+    font-size:22px;
+}
+
+.projects--wrapper{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 2em;
+    margin-top: 2em;
+    margin-bottom: 2em;
+}
+
+.project--column{
+    width: 300px;
+}
+
+.project--thumbnail{
+    width: 100%;
+}
+
+.project--body{
+    background-color: #fff;
+    padding: 1em;
+}
+
+.skills--container{
+    width: 600px;
+    margin:0 auto;
+}
+
+.skill--wrapper

@@ -1,0 +1,15 @@
+.navigation-bar{
+    background-color: #1F2428;
+    height: 50px;
+    display:flex;
+    justify-content: center;
+}
+
+.nav-link{
+    color: #fff;
+}
+
+.hero{
+    background-color: #1F2428;
+    height: 80vh;
+}

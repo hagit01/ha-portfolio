@@ -1,0 +1,28 @@
+{% extends "base/main.html" %}
+{% load 'static' %}
+{% block content %}
+
+<h3>My Messages</h3>
+
+<table>
+    <thead>
+        <tr>
+            <th>Sender</th>
+            <th>Subject</th>
+            <th>Date Send</th>
+            <th>Read</th>
+        </tr>
+    </thead>
+
+    <tbody>
+        {% for message in inbox %}
+            <tr>
+                <td>{{}}</td>
+            </tr>
+        {% endfor %}
+    </tbody>
+
+</table>
+
+
+{% endblock content %}
