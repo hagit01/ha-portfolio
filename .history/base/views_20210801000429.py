@@ -69,10 +69,7 @@ def messagePage(request, pk):
 
 def addSkill(request):
     form = SkillForm()
-    if request.method == "POST":
-        form = SkillForm(request.POST)
+    if request.method = "POST":
         form.save()
-        messages.success(request, 'Your skill was successfully added!.')
-        return redirect('base:home')
     context = {'form': form}
     return render(request, 'base/skill_form.html', context)

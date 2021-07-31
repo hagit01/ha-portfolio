@@ -1,6 +1,6 @@
 from django.shortcuts import render, redirect
 from .models import Project, Skill, Message
-from .forms import ProjectForm, MessageForm, SkillForm
+from .forms import ProjectForm, MessageForm
 from django.contrib import messages
 # Create your views here.
 
@@ -68,11 +68,4 @@ def messagePage(request, pk):
 
 
 def addSkill(request):
-    form = SkillForm()
-    if request.method == "POST":
-        form = SkillForm(request.POST)
-        form.save()
-        messages.success(request, 'Your skill was successfully added!.')
-        return redirect('base:home')
-    context = {'form': form}
-    return render(request, 'base/skill_form.html', context)
+    pass

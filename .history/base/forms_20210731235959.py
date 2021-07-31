@@ -38,11 +38,11 @@ class MessageForm(ModelForm):
 class SkillForm(ModelForm):
     class Meta:
         model = Skill
-        fields = '__all__'
+        fields = '__all__'=
     
     def __init__(self, *args, **kwargs):
         super(SkillForm, self).__init__(*args, **kwargs)
         self.fields['title'].widget.attrs.update(
             {'class': 'form-control'})
-        self.fields['body'].widget.attrs.update(
+        self.fields['email'].widget.attrs.update(
             {'class': 'form-control', })

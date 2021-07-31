@@ -72,7 +72,5 @@ def addSkill(request):
     if request.method == "POST":
         form = SkillForm(request.POST)
         form.save()
-        messages.success(request, 'Your skill was successfully added!.')
-        return redirect('base:home')
     context = {'form': form}
     return render(request, 'base/skill_form.html', context)
