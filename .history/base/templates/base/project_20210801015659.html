@@ -1,0 +1,29 @@
+{% extends "base/main.html" %}
+{% load static %}
+{% block content %}
+
+<style>
+    .project-container{
+        max-width: 600px;
+        margin: 0 auto;
+        margin-top: 2em;
+        margin-bot: 2em;
+    }
+
+</style>
+
+
+<div class="container">
+    <div class="project-container">
+        <img class="project-image" src="{{ project.thumbnail.url }}">
+
+    <h1>{{ project.title }}</h1>
+    <a class="btn btn-warning" href="{% url 'base:edit-project' project.id %}">Edit</a>
+    <hr>
+    <p>{{ project.body|safe }}</p>
+    
+    
+    </div>
+</div>
+
+{% endblock content %}

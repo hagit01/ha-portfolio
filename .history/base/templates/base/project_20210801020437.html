@@ -1,0 +1,38 @@
+{% extends "base/main.html" %}
+{% load static %}
+{% block content %}
+
+<style>
+    .project-container {
+        max-width: 800px;
+        margin: 0 auto;
+        margin-top: 2em;
+        margin-bot: 2em;
+    }
+
+</style>
+
+
+<div class="container">
+    <div class="project-container">
+        <img class="project-image" src="{{ project.thumbnail.url }}">
+        <h1>{{ project.title }}</h1>
+        <a class="btn btn-warning" href="{% url 'base:edit-project' project.id %}">Edit</a>
+        <hr>
+        <p>{{ project.body|safe }}</p>
+    </div>
+
+    <div class="comments-container">
+        <h3>Comments ({{ count }})</h3>
+        <hr>
+        {% for comment in comments%}
+            <div class="card">
+                <div class="card-body">
+                    <h5>{{ comment.name }}</h5>
+                </div>
+            </div>
+        {% endfor %}
+    </div>
+</div>
+
+{% endblock content %}
