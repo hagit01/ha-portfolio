@@ -109,7 +109,6 @@ def addEndorsement(request):
 
 
 def contact(request):
-    return render(request, 'base/contact.html')
     pass
 
 

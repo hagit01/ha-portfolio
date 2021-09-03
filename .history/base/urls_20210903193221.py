@@ -12,6 +12,6 @@ urlpatterns = [
     path('inbox/<str:pk>/', views.messagePage, name="message"),
     path('add_skill/', views.addSkill, name="add-skill"),
     path('add_endorsement/', views.addEndorsement, name="add-endorsement"),
-    path('contact/', views.contact, name='contact'),
+    path('contact/', viws.contact,)
 
 ]
